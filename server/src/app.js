@@ -1,13 +1,20 @@
 const express = require('express');
 const cors = require('cors');
+const connectDB = require('./config/db');
+const expenseRoutes = require('./routes/expenseRoutes');
+
+require('dotenv').config();
+
+// Connect to Database
+connectDB();
 
 const app = express();
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json({ status: 'success', message: 'Expense Tracker & Budget Manager API running...' });
-});
+// Routes
+app.use('/api/expenses', expenseRoutes);
 
 module.exports = app;
