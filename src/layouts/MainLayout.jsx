@@ -1,16 +1,18 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Navbar from '../components/layout/Navbar';
+import React from "react";
+import Navbar from "../components/layout/Navbar";
 
-function MainLayout() {
+const MainLayout = ({ children }) => {
   return (
-    <div>
+    <div className="app-layout">
       <Navbar />
-      <main style={{ padding: '20px' }}>
-        <Outlet />
+      <main className="main-content">
+        {children}
       </main>
+      <footer className="app-footer">
+        Expense Tracker & Budget Manager ? 2026
+      </footer>
     </div>
   );
-}
+};
 
 export default MainLayout;
