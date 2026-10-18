@@ -1,21 +1,27 @@
 ﻿const express = require('express');
 const cors = require('cors');
 
+// Import custom middleware and routes
+const loggerMiddleware = require('./middleware/loggerMiddleware');
+const expenseRoutes = require('./routes/expenseRoutes');
+
 const app = express();
 
-// Middleware configuration
+// Standard middleware configuration
 app.use(cors());
 app.use(express.json());
 
-// Import test route
-const testRoutes = require('./routes/testRoutes');
-app.use('/api', testRoutes);
+// Exercise 8: Apply Request Logging Middleware globally
+app.use(loggerMiddleware);
 
-// Default Root Route
+// Exercise 5: Register Expense API Routes
+app.use('/api/expenses', expenseRoutes);
+
+// Root route
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 'success',
-    message: 'Welcome to Expense Tracker API - Sprint 11 Server Running'
+    message: 'Welcome to Expense Tracker API - Sprint 12 Express Routing & Middleware Active'
   });
 });
 
