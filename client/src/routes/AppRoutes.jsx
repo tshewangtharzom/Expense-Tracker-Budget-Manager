@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Profile from "../pages/Profile/Profile";
+import AddExpense from "../pages/Expenses/AddExpense";
 import NotFound from "../pages/NotFound/NotFound";
 
 function AppRoutes() {
@@ -16,6 +17,7 @@ function AppRoutes() {
         <Route path="login" element={<Login />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="add-expense" element={<AddExpense />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
