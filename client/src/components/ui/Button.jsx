@@ -1,10 +1,11 @@
 
-function Button({ text, onClick, type = "button" }) {
+function Button({ text, onClick, type = "button", disabled = false }) {
   return (
     <button
       className="common-button"
-      onClick={onClick}
       type={type}
+      onClick={onClick}
+      disabled={disabled}
     >
       {text}
     </button>
