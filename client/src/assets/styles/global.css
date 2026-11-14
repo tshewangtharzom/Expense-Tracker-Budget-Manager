@@ -1,0 +1,91 @@
+
+@import "./variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 20px;
+}
+
+.main-content {
+  min-height: 75vh;
+  padding: 30px;
+}
+
+.page {
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.page h1 {
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+
+.page p {
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: var(--white-color);
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sidebar li {
+  padding: 8px 0;
+}
+
+.common-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.auth-layout {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.loader {
+  padding: 20px;
+  text-align: center;
+}
