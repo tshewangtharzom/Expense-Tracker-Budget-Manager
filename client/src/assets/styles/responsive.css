@@ -1,0 +1,101 @@
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 30px 22px;
+  }
+
+  .navbar {
+    padding: 18px 4%;
+  }
+
+  .page-title h1 {
+    font-size: 27px;
+  }
+
+  .dashboard-cards {
+    gap: 15px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 5%;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .nav-links a {
+    padding: 9px 11px;
+  }
+
+  .main-content {
+    padding: 25px 18px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .auth-layout {
+    margin: 35px auto;
+    padding: 25px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .main-content {
+    padding: 20px 14px;
+  }
+
+  .page-title h1 {
+    font-size: 22px;
+  }
+
+  .page-title p {
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 20px 12px;
+    font-size: 13px;
+  }
+
+  .auth-layout {
+    width: 94%;
+    padding: 20px;
+  }
+}
