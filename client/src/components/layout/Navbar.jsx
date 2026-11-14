@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>Expense Tracker</h2>
+      <div className="logo">
+        <h2>₹ ExpenseTrack</h2>
+      </div>
 
       <div className="nav-links">
         <NavLink to="/">Home</NavLink>
