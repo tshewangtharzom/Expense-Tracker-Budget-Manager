@@ -12,16 +12,12 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-// Custom middleware
 app.use(requestLogger);
 
-// Home route
 app.get("/", (req, res) => {
   res.send("Expense Tracker Backend is Running Successfully!");
 });
 
-// Health check
 app.get("/api/health", (req, res) => {
   res.status(200).json({
     success: true,
@@ -29,7 +25,6 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// Expense routes
 app.use("/api/expenses", expenseRoutes);
 
 export default app;
