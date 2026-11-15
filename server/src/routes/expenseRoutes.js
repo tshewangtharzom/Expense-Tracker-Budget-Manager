@@ -2,23 +2,19 @@
 import express from "express";
 
 import {
+  createExpense,
   getExpenses,
   getExpenseById,
-  createExpense,
   updateExpense,
   deleteExpense
 } from "../controllers/expenseController.js";
 
 const router = express.Router();
 
-router.get("/", getExpenses);
-
-router.get("/:id", getExpenseById);
-
 router.post("/", createExpense);
-
+router.get("/", getExpenses);
+router.get("/:id", getExpenseById);
 router.put("/:id", updateExpense);
-
 router.delete("/:id", deleteExpense);
 
 export default router;
