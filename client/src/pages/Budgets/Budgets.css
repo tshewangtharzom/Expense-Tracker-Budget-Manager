@@ -1,0 +1,171 @@
+
+.budget-page {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+  color: #222;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.budget-header h1 {
+  margin-bottom: 8px;
+}
+
+.budget-header p {
+  color: #777;
+}
+
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.budget-card {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.budget-card h3 {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.budget-card h2 {
+  color: #2563eb;
+  font-size: 25px;
+}
+
+.budget-form-container,
+.budget-table-container {
+  background: #fff;
+  padding: 22px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.budget-form-container h2,
+.budget-table-container h2 {
+  margin-bottom: 20px;
+}
+
+.budget-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.budget-form-grid label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.budget-form-grid input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.budget-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.budget-form-actions button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.budget-form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.budget-form-actions .cancel-btn {
+  background: #777;
+}
+
+.budget-table-wrapper {
+  overflow-x: auto;
+}
+
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.budget-table th,
+.budget-table td {
+  padding: 13px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.budget-table th {
+  background: #f5f7fa;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.budget-success {
+  color: #16803d;
+  margin-top: 15px;
+}
+
+.budget-error {
+  color: #dc2626;
+  margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+  .budget-page {
+    padding: 15px;
+  }
+
+  .budget-summary,
+  .budget-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-form-container,
+  .budget-table-container {
+    padding: 15px;
+  }
+}

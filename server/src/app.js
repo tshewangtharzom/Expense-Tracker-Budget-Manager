@@ -4,6 +4,9 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import expenseRoutes from "./routes/expenseRoutes.js";
+import budgetRoutes from "./routes/budgetRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
+
 import requestLogger from "./middleware/requestLogger.js";
 
 dotenv.config();
@@ -25,6 +28,13 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// Expense Module
 app.use("/api/expenses", expenseRoutes);
+
+// Budget Module
+app.use("/api/budgets", budgetRoutes);
+
+// Authentication Module
+app.use("/api/auth", authRoutes);
 
 export default app;
