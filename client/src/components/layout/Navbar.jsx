@@ -12,7 +12,7 @@ function Navbar() {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/dashboard">Dashboard</NavLink>
         <NavLink to="/profile">Profile</NavLink>
-        <NavLink to="/add-expense">Add Expense</NavLink>
+        <NavLink to="/expenses">Expenses</NavLink>
         <NavLink to="/login">Login</NavLink>
       </div>
     </nav>
